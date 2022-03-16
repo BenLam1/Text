@@ -1,6 +1,7 @@
 String title = "Wabam";
 float titleX, titleY, titleWidth, titleHeight;
 PFont titleFont;
+color blue=#3B80EA, resetDefaultInk=#FFFFFF;
 //
 //Display Geometry, Display orientation: landscape, portrait, or square
 fullScreen();
@@ -19,10 +20,10 @@ titleFont = createFont("TimesNewRomanPSMT", 55); //Verify the font exist in Proc
 //Layout our text space and typographical features
 rect(titleX, titleY, titleWidth, titleHeight);
 //Drawing Text
-fill(); //Ink,hexidecimal copied from Color Selector
-textAlign(); //Align X&Y, see Processing.org / Reference
+fill(blue); //Ink,hexidecimal copied from Color Selector
+textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
 //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
-textFont(); //Change the number until it fits
-text();
+textFont(titleFont, 10); //Change the number until it fits
+text(title, titleX, titleY, titleWidth, titleHeight);
 fill(resetDefaultInk);
 //End Program
