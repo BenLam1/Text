@@ -14,7 +14,7 @@ titleHeight = displayHeight*1/10; //Rect ends at 2/10's of height
 //Fonts from OS (Operating System)
 //String[] fontList = PFont.list(); //To list all fonts available on OS
 //printArray(fontList); //For listing all possible fonts to choose from, then createFont
-titleFont = createFont("TimesNewRomanPSMT", 55); //Verify the font exist in ProcessingJava
+titleFont = createFont("ArialMT", 55); //Verify the font exist in ProcessingJava
 //Tools / Create Font / Find Font / Do not press "OK", known bug
 //
 //Layout our text space and typographical features
@@ -23,7 +23,7 @@ rect(titleX, titleY, titleWidth, titleHeight);
 fill(blue); //Ink,hexidecimal copied from Color Selector
 textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
 //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
-textFont(titleFont, 10); //Change the number until it fits
+textFont(titleFont, 50); //Change the number until it fits
 text(title, titleX, titleY, titleWidth, titleHeight);
 fill(resetDefaultInk);
 //End Program
